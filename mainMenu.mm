@@ -10,9 +10,34 @@
 #include "ofxiPhoneExtras.h"
 
 @implementation mainMenu
+@synthesize gameCenterManager;
 
 -(void)viewDidLoad {
 	myApp = (testApp*)ofGetAppPtr();
+    if ([GameCenterManager isGameCenterAvailable]) {
+        self.gameCenterManager = [[[GameCenterManager alloc] init] autorelease];
+        [self.gameCenterManager setDelegate:self];
+        [self.gameCenterManager authenticateLocalUser];
+    } else {
+        NSLog(@"Not Supported");
+        // The current device does not support Game Center.
+    }
+}
+-(IBAction)showLeaderboard {
+        GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
+        if (leaderboardController != NULL)
+        {
+            leaderboardController.category = kLeaderboardID;
+            leaderboardController.timeScope = GKLeaderboardTimeScopeWeek;
+            leaderboardController.leaderboardDelegate = self;
+            [self presentModalViewController: leaderboardController animated: YES];
+        }
+}
+
+- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
+{
+    [self dismissModalViewControllerAnimated: YES];
+    [viewController release];
 }
 
 -(void) viewWillAppear:(BOOL)animated {
@@ -36,10 +61,29 @@
 -(IBAction)coinsInTheSlot:(id)sender{
     // Create a PayPalPayment
     PayPalPayment *payment = [[PayPalPayment alloc] init];
+    switch (donationLevel.selectedSegmentIndex) {
+        case 0:
+            payment.amount = [[NSDecimalNumber alloc] initWithString:@"1.00"];
+
+            break;
+        case 1:
+            payment.amount = [[NSDecimalNumber alloc] initWithString:@"2.00"];
+
+            break;
+        case 2:
+            payment.amount = [[NSDecimalNumber alloc] initWithString:@"5.00"];
+
+            break;
+        case 3:
+            payment.amount = [[NSDecimalNumber alloc] initWithString:@"10.00"];
+
+            break;
+    }
+    myApp->moneyOnHand = [payment.amount integerValue] * 10;
+    myApp->startingCash = [payment.amount integerValue] * 10;
     
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"39.95"];
     payment.currencyCode = @"USD";
-    payment.shortDescription = @"Awesome saws";
+    payment.shortDescription = @"Amount of Change";
     
     // Check whether payment is processable.
     if (!payment.processable) {
@@ -51,7 +95,7 @@
     
     // Provide a payerId that uniquely identifies a user within the scope of your system,
     // such as an email address or user ID.
-    NSString *aPayerId = @"someuser@somedomain.com";
+    NSString *aPayerId = @"you@example.com";
     
     // Create a PayPalPaymentViewController with the credentials and payerId, the PayPalPayment
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
@@ -65,7 +109,6 @@
     // Present the PayPalPaymentViewController.
     [self presentViewController:paymentViewController animated:YES completion:nil];
 	
-//	myApp->bFill = [toggle isOn];
 	
 }
 
@@ -91,6 +134,9 @@
                                                            options:0
                                                              error:nil];
     NSLog(@"Completed Payment");
+    self.view.hidden = YES;
+    myApp->gameState = TUTORING;
+    
     // Send confirmation to your server; your server should verify the proof of payment
     // and give the user their goods or services. If the server is not reachable, save
     // the confirmation and try again later.

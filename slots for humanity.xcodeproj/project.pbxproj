@@ -15,6 +15,17 @@
 		6F972E1717C93E4000FCC7DE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F972E1617C93E4000FCC7DE /* Security.framework */; };
 		6F972E1D17C93EC700FCC7DE /* mainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F972E1C17C93EC700FCC7DE /* mainMenu.xib */; };
 		6F972E2017C93EE300FCC7DE /* mainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E1E17C93EE300FCC7DE /* mainMenu.mm */; };
+		6F972E2317C972D300FCC7DE /* charity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E2117C972D300FCC7DE /* charity.cpp */; };
+		6F972E2617C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E2517C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.mm */; };
+		6F972E2917C992BE00FCC7DE /* dollar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E2717C992BE00FCC7DE /* dollar.cpp */; };
+		6F972E2D17C9B0C200FCC7DE /* money.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E2B17C9B0C200FCC7DE /* money.cpp */; };
+		6F972E3017CA239300FCC7DE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F972E2F17CA239300FCC7DE /* GameKit.framework */; };
+		6F972E3317CA2B9D00FCC7DE /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E3217CA2B9D00FCC7DE /* GameCenterManager.m */; };
+		6F972E3517CA310000FCC7DE /* donorschoose_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F972E3417CA310000FCC7DE /* donorschoose_logo.jpg */; };
+		6F972E3717CA347B00FCC7DE /* gameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F972E3617CA347B00FCC7DE /* gameOver.xib */; };
+		6F972E3A17CA349800FCC7DE /* gameOver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E3817CA349800FCC7DE /* gameOver.mm */; };
+		6F972E3D17CA427200FCC7DE /* explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F972E3B17CA427200FCC7DE /* explosion.cpp */; };
+		6F972E4017CA4A9A00FCC7DE /* DonorsChange_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F972E3F17CA4A9A00FCC7DE /* DonorsChange_logo.png */; };
 		6FC1786317C93C4E009E6221 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1785F17C93C4D009E6221 /* libPayPalMobile.a */; };
 		6FC1786517C93CAE009E6221 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1786417C93CAE009E6221 /* MobileCoreServices.framework */; };
 		6FC1786717C93CB6009E6221 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1786617C93CB6009E6221 /* MessageUI.framework */; };
@@ -66,6 +77,24 @@
 		6F972E1C17C93EC700FCC7DE /* mainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainMenu.xib; sourceTree = "<group>"; };
 		6F972E1E17C93EE300FCC7DE /* mainMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mainMenu.mm; sourceTree = "<group>"; };
 		6F972E1F17C93EE300FCC7DE /* mainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenu.h; sourceTree = "<group>"; };
+		6F972E2117C972D300FCC7DE /* charity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = charity.cpp; sourceTree = "<group>"; };
+		6F972E2217C972D300FCC7DE /* charity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = charity.h; sourceTree = "<group>"; };
+		6F972E2417C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneRawDataPOSTer.h; sourceTree = "<group>"; };
+		6F972E2517C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiPhoneRawDataPOSTer.mm; sourceTree = "<group>"; };
+		6F972E2717C992BE00FCC7DE /* dollar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dollar.cpp; sourceTree = "<group>"; };
+		6F972E2817C992BE00FCC7DE /* dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dollar.h; sourceTree = "<group>"; };
+		6F972E2B17C9B0C200FCC7DE /* money.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = money.cpp; sourceTree = "<group>"; };
+		6F972E2C17C9B0C200FCC7DE /* money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = money.h; sourceTree = "<group>"; };
+		6F972E2F17CA239300FCC7DE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6F972E3117CA2B9D00FCC7DE /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		6F972E3217CA2B9D00FCC7DE /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		6F972E3417CA310000FCC7DE /* donorschoose_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = donorschoose_logo.jpg; path = bin/data/donorschoose_logo.jpg; sourceTree = "<group>"; };
+		6F972E3617CA347B00FCC7DE /* gameOver.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gameOver.xib; sourceTree = "<group>"; };
+		6F972E3817CA349800FCC7DE /* gameOver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = gameOver.mm; sourceTree = "<group>"; };
+		6F972E3917CA349800FCC7DE /* gameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameOver.h; sourceTree = "<group>"; };
+		6F972E3B17CA427200FCC7DE /* explosion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = explosion.cpp; sourceTree = "<group>"; };
+		6F972E3C17CA427200FCC7DE /* explosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = explosion.h; sourceTree = "<group>"; };
+		6F972E3F17CA4A9A00FCC7DE /* DonorsChange_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonorsChange_logo.png; sourceTree = "<group>"; };
 		6FC1785F17C93C4D009E6221 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
 		6FC1786017C93C4D009E6221 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
 		6FC1786117C93C4D009E6221 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
@@ -97,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F972E3017CA239300FCC7DE /* GameKit.framework in Frameworks */,
 				6F972E1717C93E4000FCC7DE /* Security.framework in Frameworks */,
 				6FC1786D17C93CE6009E6221 /* libxml2.dylib in Frameworks */,
 				6FC1786B17C93CD4009E6221 /* CFNetwork.framework in Frameworks */,
@@ -135,6 +165,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6F972E2F17CA239300FCC7DE /* GameKit.framework */,
 				6F972E1917C93E7400FCC7DE /* gui */,
 				6F972E1617C93E4000FCC7DE /* Security.framework */,
 				6FC1786C17C93CE6009E6221 /* libxml2.dylib */,
@@ -174,9 +205,14 @@
 		6F972E1917C93E7400FCC7DE /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				6F972E3417CA310000FCC7DE /* donorschoose_logo.jpg */,
+				6F972E3F17CA4A9A00FCC7DE /* DonorsChange_logo.png */,
 				6F972E1C17C93EC700FCC7DE /* mainMenu.xib */,
 				6F972E1E17C93EE300FCC7DE /* mainMenu.mm */,
 				6F972E1F17C93EE300FCC7DE /* mainMenu.h */,
+				6F972E3617CA347B00FCC7DE /* gameOver.xib */,
+				6F972E3817CA349800FCC7DE /* gameOver.mm */,
+				6F972E3917CA349800FCC7DE /* gameOver.h */,
 			);
 			name = gui;
 			sourceTree = "<group>";
@@ -203,6 +239,10 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				6F972E3117CA2B9D00FCC7DE /* GameCenterManager.h */,
+				6F972E3217CA2B9D00FCC7DE /* GameCenterManager.m */,
+				6F972E2417C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.h */,
+				6F972E2517C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.mm */,
 				6FC1785E17C93C4D009E6221 /* PayPalMobile */,
 			);
 			name = addons;
@@ -242,6 +282,14 @@
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* testApp.mm */,
 				E4D8936C11527B74007E1F53 /* testApp.h */,
+				6F972E2117C972D300FCC7DE /* charity.cpp */,
+				6F972E2217C972D300FCC7DE /* charity.h */,
+				6F972E2717C992BE00FCC7DE /* dollar.cpp */,
+				6F972E2817C992BE00FCC7DE /* dollar.h */,
+				6F972E2B17C9B0C200FCC7DE /* money.cpp */,
+				6F972E2C17C9B0C200FCC7DE /* money.h */,
+				6F972E3B17CA427200FCC7DE /* explosion.cpp */,
+				6F972E3C17CA427200FCC7DE /* explosion.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -317,6 +365,9 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				6F972E1D17C93EC700FCC7DE /* mainMenu.xib in Resources */,
+				6F972E3517CA310000FCC7DE /* donorschoose_logo.jpg in Resources */,
+				6F972E3717CA347B00FCC7DE /* gameOver.xib in Resources */,
+				6F972E4017CA4A9A00FCC7DE /* DonorsChange_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +397,13 @@
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
 				6F972E2017C93EE300FCC7DE /* mainMenu.mm in Sources */,
+				6F972E2317C972D300FCC7DE /* charity.cpp in Sources */,
+				6F972E2617C978A100FCC7DE /* ofxiPhoneRawDataPOSTer.mm in Sources */,
+				6F972E2917C992BE00FCC7DE /* dollar.cpp in Sources */,
+				6F972E2D17C9B0C200FCC7DE /* money.cpp in Sources */,
+				6F972E3317CA2B9D00FCC7DE /* GameCenterManager.m in Sources */,
+				6F972E3A17CA349800FCC7DE /* gameOver.mm in Sources */,
+				6F972E3D17CA427200FCC7DE /* explosion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
